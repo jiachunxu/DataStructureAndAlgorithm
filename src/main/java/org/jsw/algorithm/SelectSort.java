@@ -2,6 +2,9 @@ package org.jsw.algorithm;
 
 import java.util.Arrays;
 
+/**
+ * @author adminjia
+ */
 public class SelectSort {
 
     public static void main(String[] args) {
