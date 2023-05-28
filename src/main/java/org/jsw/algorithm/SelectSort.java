@@ -2,7 +2,7 @@ package org.jsw.algorithm;
 
 import java.util.Arrays;
 
-public class 插入排序 {
+public class SelectSort {
 
     public static void main(String[] args) {
 
@@ -20,17 +20,14 @@ public class 插入排序 {
             return;
         }
         int len = num.length;
-
-        int current;
-        for (int i = 1; i <= len - 1; i++) {
-            current = num[i];
-            for (int j = i - 1; j >= 0; j--) {
-
-                if (num[j] > current) {
-                    num[j + 1] = num[j];
-                    num[j] = current;
+        int temp;
+        for (int i = 0; i < len - 1; i++) {
+            for (int j = i + 1; j < len; j++) {
+                if (num[i] > num[j]) {
+                    temp = num[i];
+                    num[i] = num[j];
+                    num[j] = temp;
                 }
-
             }
         }
 

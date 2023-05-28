@@ -2,7 +2,10 @@ package org.jsw.algorithm;
 
 import java.util.Arrays;
 
-public class 冒泡排序 {
+/**
+ * @author adminjia
+ */
+public class BubbleSort {
 
     public static void main(String[] args) {
 
