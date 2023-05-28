@@ -9,7 +9,8 @@ public class InsertSort {
 
     public static void main(String[] args) {
 
-        int[] num = {4, 69, 3, 3, 1, 56};
+//        int[] num = {4, 69, 3, 3, 1, 56};
+        int[] num = {};
 
         insertSort(num);
 
@@ -19,7 +20,7 @@ public class InsertSort {
     }
 
     public static void insertSort(int[] num) {
-        if (num == null) {
+        if (num == null || num.length == 0 || num.length == 1) {
             return;
         }
         int len = num.length;
